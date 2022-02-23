@@ -1,0 +1,47 @@
+// 基础样式
+body {
+  padding: 0px;
+  margin: 0px;
+  background-color: #121212;
+  color: #f5f5f5;
+  font-size: 14px;
+  overflow-x: hidden;
+}
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+}
+a {
+  display: block;
+  text-decoration: none;
+  color: #e7e7e7;
+}
+input {
+  border: none;
+  outline: none;
+  color: #f5f5f5;
+}
+img {
+  vertical-align: bottom;
+}
+h2 {
+  margin: 16px;
+}
+button {
+  padding: 0;
+}
+
+//
+.overlay {
+  position: sticky;
+  bottom: 0px;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.75);
+  z-index: 5;
+  display: none;
+  &.active {
+    display: block;
+  }
+}

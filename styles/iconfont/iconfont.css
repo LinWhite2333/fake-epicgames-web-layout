@@ -1,0 +1,71 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 3192696 */
+  src: url('iconfont.woff2?t=1645532966997') format('woff2'),
+       url('iconfont.woff?t=1645532966997') format('woff'),
+       url('iconfont.ttf?t=1645532966997') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-time-circle:before {
+  content: "\e784";
+}
+
+.icon-YUAN:before {
+  content: "\e785";
+}
+
+.icon-up-square:before {
+  content: "\e799";
+}
+
+.icon-gift:before {
+  content: "\e842";
+}
+
+.icon-plus-circle:before {
+  content: "\e782";
+}
+
+.icon-close:before {
+  content: "\e7fc";
+}
+
+.icon-search:before {
+  content: "\e8ef";
+}
+
+.icon-earth:before {
+  content: "\e781";
+}
+
+.icon-user:before {
+  content: "\e7ae";
+}
+
+.icon-facebook:before {
+  content: "\eb8d";
+}
+
+.icon-epicgames:before {
+  content: "\eb8a";
+}
+
+.icon-twitter:before {
+  content: "\eced";
+}
+
+.icon-unrealengine:before {
+  content: "\ecf6";
+}
+
+.icon-youtube:before {
+  content: "\ed20";
+}
+

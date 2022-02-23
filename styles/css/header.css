@@ -1,0 +1,203 @@
+#top-nav {
+  position: relative;
+  background-color: #2a2a2a;
+  z-index: 20;
+}
+@media (min-width: 768px) {
+  #top-nav {
+    display: flex;
+    align-items: center;
+  }
+}
+#top-nav .nav {
+  display: flex;
+  justify-content: space-between;
+}
+#top-nav .nav .icon-epicgames {
+  font-size: 36px;
+  color: #e7e7e7;
+  padding: 8px;
+  margin-left: 5px;
+}
+#top-nav .nav .menu-icon {
+  width: 53px;
+  height: 53px;
+  background-color: #0078f2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  #top-nav .nav .menu-icon {
+    display: none;
+  }
+}
+#top-nav .nav .menu-icon .menu-icon-lines {
+  width: 70%;
+  height: 2px;
+  margin: -10px;
+  background-color: #fff;
+  transition: all 0.3s;
+}
+#top-nav .nav .menu-icon.active {
+  background-color: #252525;
+}
+#top-nav .nav .menu-icon.active .menu-icon-lines {
+  margin: -28px;
+}
+#top-nav .nav .menu-icon.active .menu-icon-lines:nth-child(1) {
+  transform: rotate(45deg);
+}
+#top-nav .nav .menu-icon.active .menu-icon-lines:nth-child(2) {
+  opacity: 0;
+}
+#top-nav .nav .menu-icon.active .menu-icon-lines:nth-child(3) {
+  transform: rotate(-45deg);
+}
+#top-nav .menu {
+  width: 90vw;
+  height: calc(100vh - 53px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #2a2a2a;
+  position: absolute;
+  right: -90vw;
+  transition: right 0.3s;
+}
+@media (min-width: 768px) {
+  #top-nav .menu {
+    position: static;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+  }
+}
+@media (min-width: 768px) {
+  #top-nav .menu ul {
+    display: flex;
+  }
+}
+#top-nav .menu ul li {
+  border-bottom: 1px solid #333;
+}
+@media (min-width: 768px) {
+  #top-nav .menu ul li {
+    border: none;
+  }
+}
+#top-nav .menu ul li a {
+  padding: 10px 20px;
+  color: #e7e7e7;
+}
+@media (min-width: 768px) {
+  #top-nav .menu ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    padding: 0px 10px;
+    height: 100%;
+  }
+}
+#top-nav .menu .menu-right {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  box-shadow: 0 -4px 15px -4px rgba(0, 0, 0, 0.5);
+}
+@media (min-width: 768px) {
+  #top-nav .menu .menu-right {
+    box-shadow: none;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 265px;
+  }
+}
+#top-nav .menu .menu-right .login-box {
+  width: 60%;
+}
+@media (min-width: 768px) {
+  #top-nav .menu .menu-right .login-box {
+    order: 2;
+  }
+}
+#top-nav .menu .menu-right .login-box a {
+  padding: 12px;
+  border-top: 1px solid #464646;
+  border-right: 1px solid #464646;
+}
+@media (min-width: 768px) {
+  #top-nav .menu .menu-right .login-box a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    border: none;
+  }
+}
+#top-nav .menu .menu-right .login-box a .icon-user {
+  font-size: 30px;
+  margin-right: 12px;
+}
+@media (min-width: 768px) {
+  #top-nav .menu .menu-right .login-box a .icon-user {
+    font-size: 21px;
+    margin-right: 5px;
+  }
+}
+#top-nav .menu .menu-right .local-box {
+  width: 40%;
+}
+@media (min-width: 768px) {
+  #top-nav .menu .menu-right .local-box {
+    order: 1;
+  }
+}
+#top-nav .menu .menu-right .local-box a {
+  padding: 12px;
+  border-top: 1px solid #464646;
+}
+@media (min-width: 768px) {
+  #top-nav .menu .menu-right .local-box a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    border: none;
+  }
+}
+#top-nav .menu .menu-right .local-box a .icon-earth {
+  font-size: 30px;
+}
+@media (min-width: 768px) {
+  #top-nav .menu .menu-right .local-box a .icon-earth {
+    font-size: 21px;
+  }
+}
+#top-nav .menu .menu-right .get-client {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  #top-nav .menu .menu-right .get-client {
+    order: 3;
+  }
+}
+#top-nav .menu .menu-right .get-client a {
+  padding: 20px;
+  border-top: 1px solid #464646;
+  background-color: #0078f2;
+}
+@media (min-width: 768px) {
+  #top-nav .menu .menu-right .get-client a {
+    border: none;
+    padding: 16px;
+  }
+}
+#top-nav .menu.active {
+  right: 0px;
+  z-index: 20;
+}
+/*# sourceMappingURL=./header.css.map */

@@ -1,0 +1,681 @@
+.see-more-btn {
+  height: fit-content;
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid rgba(245, 245, 245, 0.6);
+  border-radius: 4px;
+  padding: 10px 20px;
+}
+.card {
+  width: 60vw;
+  margin: 10px;
+}
+.card img {
+  width: 100%;
+  border-radius: 4px;
+}
+.card .card-title {
+  font-size: 15px;
+  line-height: 36px;
+}
+.card .card-describe {
+  line-height: 20px;
+  color: rgba(245, 245, 245, 0.6);
+  padding-bottom: 15px;
+}
+.card .card-about-price {
+  display: flex;
+  align-items: center;
+}
+.card .card-about-price .card-discount {
+  background-color: #0074e4;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 9px;
+  font-weight: bold;
+}
+.card .card-about-price .card-original-price {
+  margin-left: 10px;
+  text-decoration: line-through;
+  color: rgba(245, 245, 245, 0.6);
+}
+.card .card-about-price .card-price-after-discount {
+  margin-left: 10px;
+}
+.card .more-btn {
+  display: flex;
+  align-items: center;
+}
+.card .more-btn .card-btn-link {
+  display: none;
+}
+@media (min-width: 768px) {
+  .card .more-btn .card-btn-link {
+    display: block;
+    margin: 10px 0px;
+  }
+}
+.card .more-btn .card-btn-link .card-btn {
+  padding: 15px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.card .more-btn .add-wishlist {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .card .more-btn .add-wishlist {
+    display: block;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    height: fit-content;
+    padding: 16px;
+    cursor: pointer;
+  }
+  .card .more-btn .add-wishlist:hover {
+    background-color: rgba(255, 255, 255, 0.16);
+  }
+}
+.lcard .lcard-img-box {
+  width: 100%;
+}
+.lcard .lcard-img-box img {
+  width: 100%;
+  border-radius: 4px 4px 0 0;
+}
+.lcard .lcard-img-box .lcard-img-bottom-banner {
+  background-color: #000;
+  text-align: center;
+  border-radius: 0 0 4px 4px;
+  padding: 5px;
+  font-size: 12px;
+  font-weight: 700;
+}
+.lcard .lcard-img-box .lcard-img-bottom-banner.now {
+  background-color: #0074e4;
+}
+.lcard .lcard-title {
+  margin-top: 16px;
+}
+.lcard .lcard-describe {
+  margin-bottom: 16px;
+  color: rgba(245, 245, 245, 0.6);
+}
+.rcard {
+  display: flex;
+  width: 100%;
+}
+.rcard .img-box {
+  margin-right: 15px;
+  width: 60px;
+}
+@media (min-width: 1440px) {
+  .rcard .img-box {
+    width: 100px;
+  }
+}
+@media (min-width: 1600px) {
+  .rcard .img-box {
+    width: 160px;
+  }
+}
+.rcard .img-box img {
+  width: 100%;
+  border-radius: 4px;
+}
+.rcard .rcard-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+.rcard .rcard-text .rcard-about-price {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.rcard .rcard-text .rcard-about-price .rcard-discount {
+  background-color: #0074e4;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 9px;
+  font-weight: bold;
+}
+.rcard .rcard-text .rcard-about-price .rcard-original-price {
+  margin-left: 10px;
+  text-decoration: line-through;
+  color: rgba(245, 245, 245, 0.6);
+  font-size: 12px;
+}
+.rcard .rcard-text .rcard-about-price .rcard-price-after-discount {
+  margin-left: 10px;
+}
+main #container {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding-bottom: 90px;
+}
+@media (min-width: 1024px) {
+  main #container {
+    width: 75%;
+  }
+}
+#search-category-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0px;
+  width: 100vw;
+  z-index: 10;
+  background-color: #121212;
+}
+@media (min-width: 1024px) {
+  #search-category-box {
+    justify-content: flex-start;
+  }
+}
+#search-category-box .search-box {
+  display: flex;
+  margin-left: 60px;
+}
+@media (min-width: 1024px) {
+  #search-category-box .search-box {
+    background-color: #202020;
+    padding: 10px;
+    border-radius: 24px;
+    margin: 30px 10px;
+  }
+}
+#search-category-box .search-box .icon-search {
+  font-size: 18px;
+  color: rgba(245, 245, 245, 0.6);
+  cursor: pointer;
+}
+#search-category-box .search-box input {
+  display: none;
+}
+@media (min-width: 1024px) {
+  #search-category-box .search-box input {
+    display: block;
+    width: 120px;
+    background-color: #202020;
+  }
+}
+#search-category-box .search-box .icon-close {
+  cursor: pointer;
+  display: none;
+}
+#search-category-box .toggle-category {
+  padding: 30px;
+}
+#search-category-box .space {
+  visibility: hidden;
+  width: 100px;
+}
+#search-category-box.active .search-box {
+  background-color: #202020;
+  margin: 0;
+  width: 100%;
+}
+#search-category-box.active .search-box .icon-search {
+  font-size: 18px;
+  margin: 30px;
+  margin-right: 14px;
+}
+#search-category-box.active .search-box input {
+  display: block;
+  background-color: #202020;
+  width: 100%;
+}
+#search-category-box.active .search-box .icon-close {
+  display: block;
+  font-size: 18px;
+  margin: 30px 30px;
+}
+#search-category-box.active .toggle-category {
+  display: none;
+}
+#search-category-box.active .space {
+  display: none;
+}
+#rotating-image {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+@media (min-width: 768px) {
+  #rotating-image {
+    flex-direction: row;
+  }
+}
+#rotating-image .rotating-img-group {
+  display: flex;
+  width: 300%;
+}
+@media (min-width: 768px) {
+  #rotating-image .rotating-img-group {
+    position: relative;
+  }
+}
+#rotating-image .rotating-img-group a {
+  margin: 5px;
+  width: 90vw;
+}
+@media (min-width: 768px) {
+  #rotating-image .rotating-img-group a {
+    width: 100%;
+    position: absolute;
+    margin: 0;
+  }
+}
+#rotating-image .rotating-img-group a img {
+  border-radius: 16px;
+  width: 100%;
+  height: 100%;
+}
+#rotating-image .rotating-toggle-btn-group {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  #rotating-image .rotating-toggle-btn-group {
+    margin-left: 20px;
+    flex-direction: column;
+  }
+}
+#rotating-image .rotating-toggle-btn-group > div {
+  display: flex;
+  padding: 15px 10px;
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  #rotating-image .rotating-toggle-btn-group > div {
+    padding: 0px;
+    display: flex;
+  }
+}
+#rotating-image .rotating-toggle-btn-group > div .rotating-toggle-point {
+  display: flex;
+  width: 5px;
+  height: 5px;
+  padding: 0;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+@media (min-width: 768px) {
+  #rotating-image .rotating-toggle-btn-group > div .rotating-toggle-point {
+    display: none;
+  }
+}
+#rotating-image .rotating-toggle-btn-group > div .rotating-toggle-btn-describe {
+  display: none;
+}
+@media (min-width: 768px) {
+  #rotating-image .rotating-toggle-btn-group > div .rotating-toggle-btn-describe {
+    display: flex;
+  }
+  #rotating-image .rotating-toggle-btn-group > div .rotating-toggle-btn-describe div {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  #rotating-image .rotating-toggle-btn-group > div .rotating-toggle-btn-describe div img {
+    border-radius: 8px;
+    width: 32%;
+    margin: 10px;
+  }
+}
+#rotating-image .rotating-toggle-btn-group > div.r-active .rotating-toggle-point {
+  background-color: #fff;
+  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.1);
+}
+#rotating-image .rotating-toggle-btn-group > div.r-active .rotating-toggle-btn-describe {
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.08);
+}
+#discount-games {
+  margin: 10px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+#discount-games .card-list {
+  display: flex;
+  width: 400%;
+}
+@media (min-width: 768px) {
+  #discount-games .card-list {
+    width: 100%;
+  }
+}
+#discount-games .card-list .card:last-child {
+  display: none;
+}
+@media (min-width: 1180px) {
+  #discount-games .card-list .card:last-child {
+    display: block;
+  }
+}
+#new-release {
+  margin: 10px;
+}
+#new-release .card-list {
+  flex-wrap: wrap;
+  display: flex;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  #new-release .card-list {
+    flex-wrap: nowrap;
+  }
+}
+#new-release .card-list .card {
+  width: calc(50% - 10px);
+  margin: 5px;
+}
+@media (min-width: 768px) {
+  #new-release .card-list .card {
+    width: 60vw;
+    margin: 10px;
+  }
+}
+#new-release .card-list .card:last-child {
+  display: none;
+}
+@media (min-width: 1180px) {
+  #new-release .card-list .card:last-child {
+    display: block;
+  }
+}
+#recommend-game {
+  margin: 20px;
+  margin-top: 60px;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  #recommend-game {
+    display: flex;
+    width: 100%;
+  }
+}
+#recommend-game img {
+  width: 100%;
+  border-radius: 16px;
+}
+@media (min-width: 768px) {
+  #recommend-game img {
+    width: 60%;
+  }
+}
+#recommend-game .card {
+  padding-left: 40px;
+  padding-top: 5px;
+}
+@media (min-width: 768px) {
+  #recommend-game .card {
+    padding-left: 0px;
+    width: 36%;
+  }
+}
+#free-games {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  margin-bottom: 50px;
+}
+#free-games .title-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+#free-games .title-box .title {
+  display: flex;
+  align-items: center;
+}
+#free-games .title-box .title h2 {
+  font-weight: normal;
+  font-size: 18px;
+}
+#free-games .title-box .title .icon-gift {
+  font-size: 36px;
+}
+@media (min-width: 577px) {
+  #free-games .free-games-card-list {
+    display: flex;
+  }
+  #free-games .free-games-card-list .lcard {
+    margin: 10px;
+  }
+}
+#rank-lists > ul {
+  display: flex;
+  width: 300%;
+  margin: 10px;
+  padding: 0px 24px;
+}
+@media (min-width: 768px) {
+  #rank-lists > ul {
+    width: calc(100% - 20px);
+    padding: 0px;
+  }
+}
+#rank-lists > ul > li {
+  padding: 0px 8px;
+  width: 300px;
+}
+@media (min-width: 768px) {
+  #rank-lists > ul > li {
+    width: 100%;
+  }
+}
+#rank-lists > ul > li:not(:last-child) {
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+#rank-lists > ul > li .title-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+#rank-lists > ul > li .title-box .title {
+  font-size: 18px;
+}
+#rank-lists > ul > li > ul > li {
+  padding: 16px 8px;
+  border-radius: 16px;
+}
+#rank-lists > ul > li > ul > li:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+#rank-lists .switch-list {
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  #rank-lists .switch-list {
+    display: none;
+  }
+}
+#rank-lists .switch-list .btn-p {
+  padding: 10px 8px;
+  margin: 3px;
+  cursor: pointer;
+}
+#rank-lists .switch-list .btn-p .switch-btn {
+  background-color: #f5f5f5;
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  opacity: 0.3;
+}
+#rank-lists .switch-list .btn-p .switch-btn.active {
+  opacity: 1;
+}
+#two-recommended-games {
+  margin-top: 60px;
+}
+#two-recommended-games .recommend-list {
+  display: flex;
+  width: 200%;
+  padding: 0px 20px;
+}
+@media (min-width: 768px) {
+  #two-recommended-games .recommend-list {
+    width: calc(100% - 40px);
+  }
+}
+#two-recommended-games .recommend-list .lcard {
+  margin-right: 15px;
+  width: 50vw;
+}
+#two-recommended-games .recommend-list .lcard .lcard-img-box img {
+  border-radius: 16px;
+  width: 100%;
+}
+#two-recommended-games .recommend-list .lcard .lcard-text {
+  padding: 0 15px;
+}
+#two-recommended-games .recommend-list .lcard .lcard-text .lcard-title {
+  font-size: 18px;
+}
+#two-recommended-games .recommend-list .lcard .lcard-text .lcard-describe {
+  line-height: 20px;
+}
+#two-recommended-games .recommend-list .lcard .lcard-text .focus {
+  font-size: 18px;
+  line-height: 25px;
+}
+#two-recommended-games .switch-list {
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  #two-recommended-games .switch-list {
+    display: none;
+  }
+}
+#two-recommended-games .switch-list .btn-p {
+  padding: 10px 8px;
+  margin: 3px;
+  cursor: pointer;
+}
+#two-recommended-games .switch-list .btn-p .switch-btn {
+  background-color: #f5f5f5;
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  opacity: 0.3;
+}
+#two-recommended-games .switch-list .btn-p .switch-btn.active {
+  opacity: 1;
+}
+#recently-updated {
+  margin: 10px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+#recently-updated .card-list {
+  display: flex;
+  width: 400%;
+}
+@media (min-width: 768px) {
+  #recently-updated .card-list {
+    width: 100%;
+  }
+}
+#recently-updated .card-list .card:last-child {
+  display: none;
+}
+@media (min-width: 1180px) {
+  #recently-updated .card-list .card:last-child {
+    display: block;
+  }
+}
+#most-popular {
+  margin: 10px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+#most-popular .card-list {
+  display: flex;
+  width: 400%;
+}
+@media (min-width: 768px) {
+  #most-popular .card-list {
+    width: 100%;
+  }
+}
+#most-popular .card-list .card:last-child {
+  display: none;
+}
+@media (min-width: 1180px) {
+  #most-popular .card-list .card:last-child {
+    display: block;
+  }
+}
+#new-arrival {
+  margin: 10px;
+}
+#new-arrival .card-list {
+  flex-wrap: wrap;
+  display: flex;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  #new-arrival .card-list {
+    flex-wrap: nowrap;
+  }
+}
+#new-arrival .card-list .card {
+  width: calc(50% - 10px);
+  margin: 5px;
+}
+@media (min-width: 768px) {
+  #new-arrival .card-list .card {
+    width: 60vw;
+    margin: 10px;
+  }
+}
+#new-arrival .card-list .card:last-child {
+  display: none;
+}
+@media (min-width: 1180px) {
+  #new-arrival .card-list .card:last-child {
+    display: block;
+  }
+}
+#browse {
+  margin: 20px;
+  margin-top: 60px;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  #browse {
+    display: flex;
+    width: 100%;
+  }
+}
+#browse img {
+  width: 100%;
+  border-radius: 16px;
+}
+@media (min-width: 768px) {
+  #browse img {
+    width: 60%;
+  }
+}
+#browse .card {
+  padding-left: 40px;
+  padding-top: 5px;
+}
+@media (min-width: 768px) {
+  #browse .card {
+    padding-left: 0px;
+    width: 36%;
+  }
+}
+/*# sourceMappingURL=./main.css.map */

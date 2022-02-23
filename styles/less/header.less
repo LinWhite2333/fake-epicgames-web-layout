@@ -1,0 +1,202 @@
+// 顶部导航条
+#top-nav {
+  position: relative;
+  background-color: #2a2a2a;
+  z-index: 20;
+  // 大于768px 修改 #top-nav
+  @media (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
+  // 导航条(不包括菜单)
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    // Epic图标
+    .icon-epicgames {
+      font-size: 36px;
+      color: #e7e7e7;
+      padding: 8px;
+      margin-left: 5px;
+    }
+    // 菜单图标
+    .menu-icon {
+      width: 53px;
+      height: 53px;
+      background-color: #0078f2;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      cursor: pointer;
+      // 大于768px 修改 .menu-icon
+      @media (min-width: 768px) {
+        display: none;
+      }
+      // 菜单图标中的线
+      .menu-icon-lines {
+        width: 70%;
+        height: 2px;
+        margin: -10px;
+        background-color: #fff;
+        transition: all 0.3s;
+      }
+      // 手机端的右侧抽屉菜单激活
+      &.active {
+        background-color: #252525;
+        .menu-icon-lines {
+          margin: -28px;
+        }
+        .menu-icon-lines:nth-child(1) {
+          transform: rotate(45deg);
+        }
+        .menu-icon-lines:nth-child(2) {
+          opacity: 0;
+        }
+        .menu-icon-lines:nth-child(3) {
+          transform: rotate(-45deg);
+        }
+      }
+    }
+  }
+  // 菜单
+  .menu {
+    width: 90vw;
+    height: calc(100vh - 53px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #2a2a2a;
+    position: absolute;
+    right: -90vw;
+    transition: right 0.3s;
+    // 大于768px 修改 .menu
+    @media (min-width: 768px) {
+      position: static;
+      flex-direction: row;
+      width: 100%;
+      height: auto;
+    }
+    // 导航列表
+    ul {
+      // 大于768px 修改 ul
+      @media (min-width: 768px) {
+        display: flex;
+      }
+      li {
+        border-bottom: 1px solid #333;
+        // 大于768px 修改 li
+        @media (min-width: 768px) {
+          border: none;
+        }
+        a {
+          padding: 10px 20px;
+          color: #e7e7e7;
+          // 大于768px 修改 a
+          @media (min-width: 768px) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 13px;
+            padding: 0px 10px;
+            height: 100%;
+          }
+        }
+      }
+    }
+    // 登录、切换语言、获取客户端的盒子
+    .menu-right {
+      display: flex;
+      flex-wrap: wrap;
+      text-align: center;
+      box-shadow: 0 -4px 15px -4px rgba(0, 0, 0, 0.5);
+      // 大于768px 修改 .menu-right
+      @media (min-width: 768px) {
+        box-shadow: none;
+        flex-wrap: nowrap;
+        align-items: center;
+        width: 265px;
+      }
+      // 登录盒
+      .login-box {
+        width: 60%;
+        // 大于768px 修改 .login-box
+        @media (min-width: 768px) {
+          order: 2;
+        }
+        a {
+          padding: 12px;
+          border-top: 1px solid #464646;
+          border-right: 1px solid #464646;
+          // 大于768px 修改 .login-box
+          @media (min-width: 768px) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0px;
+            border: none;
+          }
+          .icon-user {
+            font-size: 30px;
+            margin-right: 12px;
+            // 大于768px 修改 .icon-user
+            @media (min-width: 768px) {
+              font-size: 21px;
+              margin-right: 5px;
+            }
+          }
+        }
+      }
+      // 切换语言盒
+      .local-box {
+        width: 40%;
+        // 大于768px 修改 .local-box
+        @media (min-width: 768px) {
+          order: 1;
+        }
+        a {
+          padding: 12px;
+          border-top: 1px solid #464646;
+          // 大于768px 修改 a
+          @media (min-width: 768px) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0px;
+            border: none;
+          }
+          .icon-earth {
+            font-size: 30px;
+            // 大于768px 修改 .icon-earth
+            @media (min-width: 768px) {
+              font-size: 21px;
+            }
+          }
+        }
+      }
+      // 获取客户端盒
+      .get-client {
+        width: 100%;
+        // 大于768px 修改 .get-client
+        @media (min-width: 768px) {
+          order: 3;
+        }
+        a {
+          padding: 20px;
+          border-top: 1px solid #464646;
+          background-color: #0078f2;
+          // 大于768px 修改 a
+          @media (min-width: 768px) {
+            border: none;
+            padding: 16px;
+          }
+        }
+      }
+    }
+    // 手机端的右侧抽屉菜单激活
+    &.active {
+      right: 0px;
+      z-index: 20;
+    }
+  }
+}

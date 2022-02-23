@@ -1,0 +1,71 @@
+footer {
+  background-color: #202020;
+  padding: 20px;
+}
+#icon-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#icon-list .social {
+  display: flex;
+}
+#icon-list .social .iconfont {
+  color: #ccc;
+  font-size: 28px;
+  margin-right: 10px;
+}
+#icon-list .social .iconfont:hover {
+  color: #0078f2;
+  transition: color 0.3s;
+}
+#icon-list .scroll-up .iconfont {
+  color: #ccc;
+  font-size: 42px;
+}
+#icon-list .scroll-up .iconfont:hover {
+  color: #0078f2;
+  transition: color 0.3s;
+}
+.footer-link {
+  margin-top: 20px;
+}
+.footer-link .link-title {
+  color: #ccc;
+  opacity: 0.4;
+}
+.footer-link .link-list-box {
+  display: flex;
+}
+.footer-link .link-list-box > ul {
+  margin-right: 24px;
+}
+.footer-link .link-list-box > ul > li {
+  line-height: 24px;
+}
+.footer-link .link-list-box > ul > li a:hover {
+  color: #0078f2;
+  transition: color 0.3s;
+}
+hr {
+  margin: 20px 0px;
+  border-color: #333;
+  border-style: solid none none;
+}
+#copyright {
+  color: #ccc;
+  font-size: 13px;
+  margin-bottom: 20px;
+  line-height: 20px;
+}
+.footer-more-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 13px;
+}
+.footer-more-link a:hover {
+  color: #0078f2;
+  transition: color 0.3s;
+}
+/*# sourceMappingURL=./footer.css.map */

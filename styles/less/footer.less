@@ -1,0 +1,79 @@
+footer {
+  background-color: #202020;
+  padding: 20px;
+}
+
+// 图标
+#icon-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .social {
+    display: flex;
+    .iconfont {
+      color: #ccc;
+      font-size: 28px;
+      margin-right: 10px;
+      &:hover {
+        color: #0078f2;
+        transition: color 0.3s;
+      }
+    }
+  }
+  .scroll-up {
+    .iconfont {
+      color: #ccc;
+      font-size: 42px;
+      &:hover {
+        color: #0078f2;
+        transition: color 0.3s;
+      }
+    }
+  }
+}
+
+// 超链接列表
+.footer-link {
+  margin-top: 20px;
+  .link-title {
+    color: #ccc;
+    opacity: 0.4;
+  }
+  .link-list-box {
+    display: flex;
+    > ul {
+      margin-right: 24px;
+      > li {
+        line-height: 24px;
+        a:hover {
+          color: #0078f2;
+          transition: color 0.3s;
+        }
+      }
+    }
+  }
+}
+
+hr {
+  margin: 20px 0px;
+  border-color: #333;
+  border-style: solid none none;
+}
+
+#copyright {
+  color: #ccc;
+  font-size: 13px;
+  margin-bottom: 20px;
+  line-height: 20px;
+}
+
+.footer-more-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 13px;
+  a:hover {
+    color: #0078f2;
+    transition: color 0.3s;
+  }
+}
